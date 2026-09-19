@@ -5,7 +5,7 @@
      CONFIGURAÇÃO — edite aqui antes de publicar em produção
      ========================================================== */
   var CONFIG = {
-    firmWhatsApp: "5579900000000", // TODO: substituir pelo WhatsApp comercial real (formato 55DDDNUMERO)
+    firmWhatsApp: "557991546226", // TODO: substituir pelo WhatsApp comercial real (formato 55DDDNUMERO)
     teamPin: "2026",               // código de acesso do painel da equipe (mude quando quiser)
     storageKey: "raiox_leads_v1",
 
