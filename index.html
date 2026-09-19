@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#211d3a">
+<title>Raio-X Jurídico da Escola · Clara Machado Advocacia</title>
+<meta name="description" content="Diagnóstico jurídico rápido para gestores escolares — proteção, conformidade, IA responsável, cultura e governança.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<div class="app">
+  <div class="topline" aria-hidden="true"></div>
+
+  <header class="brandbar">
+    <div class="mark">
+      <img class="brand-logo" src="assets/logo.png" alt="Clara Machado Advocacia & Consultoria" width="34" height="34">
+      <span class="name">Clara Machado Advocacia<small>&amp; Consultoria</small></span>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ VIEW: INTRO ============ -->
+    <section class="view active" id="view-intro" aria-labelledby="intro-title">
+      <p class="eyebrow">Raio-X Jurídico da Escola</p>
+      <h1 class="title" id="intro-title">Sua escola resistiria a uma fiscalização amanhã de manhã?</h1>
+      <p class="lede">10 perguntas de sim ou não sobre os cinco pilares que sustentam uma gestão escolar juridicamente segura. Ao final, você recebe o seu índice — e os pontos que merecem atenção primeiro.</p>
+
+      <div class="pillars-preview" aria-hidden="true">
+        <div class="p"><span class="mono">PR</span><span class="lbl">Proteção</span></div>
+        <div class="p"><span class="mono">CF</span><span class="lbl">Conformidade</span></div>
+        <div class="p"><span class="mono">IA</span><span class="lbl">IA Responsável</span></div>
+        <div class="p"><span class="mono">CU</span><span class="lbl">Cultura</span></div>
+        <div class="p"><span class="mono">GV</span><span class="lbl">Governança</span></div>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="btn-start">Iniciar diagnóstico — 2 minutos</button>
+      <p class="microcopy">Gratuito. Seus dados são usados apenas para o envio do relatório e um contato de agendamento, conforme a LGPD.</p>
+    </section>
+
+    <!-- ============ VIEW: QUESTIONS ============ -->
+    <section class="view" id="view-questions" aria-labelledby="question-heading">
+      <div class="piece-progress" id="qprogress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"></div>
+      <p class="qcount" id="qcount">Pergunta 1 de 10</p>
+      <span class="pillar-tag" id="qpillar">Proteção</span>
+      <h2 class="question" id="question-heading">—</h2>
+
+      <div class="yn" role="group" aria-label="Responda sim ou não">
+        <button type="button" data-val="1" id="btn-sim">Sim</button>
+        <button type="button" data-val="0" id="btn-nao">Não</button>
+      </div>
+
+      <div class="navrow">
+        <button class="btn btn-ghost btn-sm" id="btn-back">Voltar</button>
+        <span class="microcopy" id="q-help">Toque em Sim ou Não para avançar</span>
+      </div>
+    </section>
+
+    <!-- ============ VIEW: LEAD FORM ============ -->
+    <section class="view" id="view-form" aria-labelledby="form-title">
+      <p class="eyebrow">Quase lá</p>
+      <h2 id="form-title" style="font-size:1.6rem; margin-bottom:6px;">Para onde enviamos o seu relatório?</h2>
+      <p class="lede" style="margin-bottom:22px;">Leva 20 segundos. É assim que a nossa equipe personaliza as recomendações para o porte da sua escola.</p>
+
+      <form id="lead-form" novalidate>
+        <div class="field" data-field="nome">
+          <label for="f-nome">Nome</label>
+          <input type="text" id="f-nome" autocomplete="name" placeholder="Seu nome completo">
+          <p class="error">Digite seu nome.</p>
+        </div>
+
+        <div class="field" data-field="escola">
+          <label for="f-escola">Escola</label>
+          <input type="text" id="f-escola" placeholder="Nome da instituição">
+          <p class="error">Digite o nome da escola.</p>
+        </div>
+
+        <div class="field" data-field="cargo">
+          <label for="f-cargo">Seu cargo</label>
+          <select id="f-cargo">
+            <option value="">Selecione</option>
+            <option>Diretor(a) / Mantenedor(a)</option>
+            <option>Coordenador(a) pedagógico(a)</option>
+            <option>Coordenador(a) administrativo/financeiro</option>
+            <option>Secretário(a) escolar</option>
+            <option>Outro</option>
+          </select>
+          <p class="error">Selecione um cargo.</p>
+        </div>
+
+        <div class="field" data-field="alunos">
+          <label for="f-alunos">Número de alunos</label>
+          <select id="f-alunos">
+            <option value="">Selecione uma faixa</option>
+            <option>Até 100</option>
+            <option>101 a 300</option>
+            <option>301 a 600</option>
+            <option>601 a 1000</option>
+            <option>Mais de 1000</option>
+          </select>
+          <p class="error">Selecione uma faixa.</p>
+        </div>
+
+        <div class="field" data-field="whatsapp">
+          <label for="f-whats">WhatsApp com DDD</label>
+          <input type="tel" id="f-whats" autocomplete="tel" placeholder="(79) 90000-0000" inputmode="tel">
+          <p class="error">Digite um WhatsApp válido.</p>
+        </div>
+
+        <div class="field" data-field="preocupacao">
+          <label for="f-preoc">O que mais te preocupa hoje?</label>
+          <input type="text" id="f-preoc" placeholder="Ex.: uso de IA, imagem de alunos, contratos...">
+          <p class="hint">Opcional, mas ajuda a equipe a priorizar seu retorno.</p>
+        </div>
+
+        <div class="consent">
+          <input type="checkbox" id="f-consent">
+          <p>Autorizo o contato da Clara Machado Advocacia &amp; Consultoria por WhatsApp para envio do relatório e agendamento de conversa, conforme a LGPD.</p>
+        </div>
+        <p class="error" id="consent-error" style="margin-top:-14px; margin-bottom:16px;">É preciso autorizar o contato para receber o relatório.</p>
+
+        <button type="submit" class="btn btn-primary btn-block" id="btn-submit">Ver meu índice de segurança jurídica</button>
+      </form>
+    </section>
+
+    <!-- ============ VIEW: RESULT ============ -->
+    <section class="view" id="view-result" aria-labelledby="result-title">
+      <div class="score-hero">
+        <div>
+          <p class="label">Índice de Segurança Jurídica</p>
+          <div class="score-num-row">
+            <span class="score-num" id="score-num">0</span>
+            <span class="score-of">/ 100</span>
+          </div>
+        </div>
+        <span class="status" id="score-status">—</span>
+      </div>
+      <div class="score-bar"><i id="score-bar-fill"></i></div>
+
+      <p class="attention-msg" id="attention-msg"></p>
+
+      <div id="weak-list"></div>
+
+      <div class="cta-block">
+        <a class="btn btn-primary btn-block" id="btn-whatsapp" target="_blank" rel="noopener">Falar com a equipe agora</a>
+        <p>O relatório completo chega no seu WhatsApp em instantes.</p>
+      </div>
+
+      <div class="navrow" style="margin-top:34px;">
+        <button class="btn btn-ghost btn-block" id="btn-restart">Novo diagnóstico</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="footer-row">
+    <span id="year-tag">Geedu Connect</span>
+    <button class="team-link" id="open-team">Acesso da equipe</button>
+  </div>
+</div>
+
+<!-- ============ TEAM PANEL (protected) ============ -->
+<div class="overlay" id="team-overlay">
+  <div class="panel">
+
+    <div id="pin-gate">
+      <div class="pin-box">
+        <h2 style="font-size:1.2rem; margin-bottom:6px;">Painel da equipe</h2>
+        <p class="microcopy" style="margin-bottom:16px;">Digite o código de acesso da equipe.</p>
+        <input type="text" id="pin-input" inputmode="numeric" maxlength="4" placeholder="••••">
+        <p class="error" id="pin-error" style="display:none; margin-top:8px;">Código incorreto.</p>
+        <button class="btn btn-primary btn-block" id="pin-submit" style="margin-top:16px;">Entrar</button>
+        <button class="btn btn-ghost btn-block" id="pin-cancel" style="margin-top:10px;">Voltar ao diagnóstico</button>
+      </div>
+    </div>
+
+    <div id="team-content" hidden>
+      <div class="panel-head">
+        <div>
+          <h2>Leads capturados — Raio-X</h2>
+          <p class="sub">Dados armazenados apenas neste dispositivo. Exporte o CSV ao final do evento.</p>
+        </div>
+        <button class="icon-btn" id="close-team" aria-label="Fechar painel">✕</button>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat"><div class="n" id="stat-total">0</div><div class="l">Leads capturados</div></div>
+        <div class="stat"><div class="n" id="stat-avg">0</div><div class="l">Índice médio</div></div>
+        <div class="stat"><div class="n" id="stat-weak">—</div><div class="l">Pilar mais frágil (moda)</div></div>
+      </div>
+
+      <div class="table-wrap" id="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th><th>Nome</th><th>Escola</th><th>Cargo</th><th>Alunos</th>
+              <th>WhatsApp</th><th>Índice</th><th>Pilar fraco</th><th>Preocupação</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="leads-tbody"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>Nenhum lead capturado ainda neste dispositivo.</div>
+
+      <div class="panel-actions">
+        <button class="btn btn-ghost btn-sm" id="btn-export-csv">Baixar CSV</button>
+        <button class="btn btn-ghost btn-sm" id="btn-clear-all" style="border-color:var(--coral); color:var(--coral);">Limpar todos os dados</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
